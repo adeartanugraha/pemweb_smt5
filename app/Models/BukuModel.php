@@ -29,7 +29,7 @@ class BukuModel extends Model
         'penerbit' => 'required|min_length[5]',
         'tahun_terbit' => 'required|numeric',
         'harga' => 'required|numeric',
-        'penulis' => 'required|min_length[5]'];
+        'penulis' => 'required|min_length[5]',];
     protected $validationMessages   = [
         'judul_buku' => [
             'required' => 'Bagian judul buku Harus diisi',
@@ -50,7 +50,7 @@ class BukuModel extends Model
         'penulis' => [
             'required' => 'Bagian nama penulis harus diisi',
             'min_length' => 'Nama penulis minimal 5 karakter'
-        ]
+        ],
     ];
     protected $skipValidation       = false;
     // protected $cleanValidationRules = true;
